@@ -1,36 +1,75 @@
 /* Add a black background color to the top navigation */
-.container {
-    /* background-color: #f39696; */
-    padding: 1px 0;
-    text-align: center;
-    justify-content: center;
-      /* display: flex; */
-	/* align-items: center; */
-    
+.header {
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  
+  /* background-color: black; */
+}
+
+/* Resize the logo image */
+.img {
+  height: 40px;
+  max-width: 100%;
+}
+
+/* Make the navigation list responsive */
+.ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation links */
+.li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.li a:hover {
+  color: #ff0000;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  .ul {
+    flex-direction: column;
   }
   
-  .menu {
-    list-style: none; /* Remove the bullet points */
-    margin: 0;
-    padding: 0;
-    display: flex; /* Use flexbox to align the items horizontally */
-    justify-content: space-between; /* Add some space between the items */
+  .li {
+    margin-bottom: 10px;
   }
   
-  .menu li {
-    margin: 0 10px; /* Add some margin between the items */
+  .li:last-child {
+    margin-bottom: 0;
   }
-  
-  .menu li a {
-    display: block; /* Make the <a> tag a block element */
-    padding: 10px; /* Add some padding to the <a> tag */
-    text-decoration: none; /* Remove the underline */
-    color: #333; /* Change the color of the text */
-  }
-  .menu li a:hover {
-    display: block; /* Make the <a> tag a block element */
-    /* font-size: 20px; */
-    padding: 10px; /* Add some padding to the <a> tag */
-    text-decoration: none; /* Remove the underline */
-    color: #ff0000; /* Change the color of the text */
-  }
+}
+
+.button-34 {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 8px 18px -12px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}

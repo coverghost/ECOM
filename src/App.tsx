@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import Head from './components/header';
 import BASE_URL from './api/endurls';
+import LoginForm from './components/home';
 
 function App() {
   const [message, setMessage] = useState("");
@@ -11,12 +11,12 @@ function App() {
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   }, [])
-  console.log('messge -->', message)
-  console.log("BASE_URLS ------<>>>>>>>>",BASE_URL)
+  // console.log('messge -->', message)
+  // console.log("BASE_URLS ------<>>>>>>>>",BASE_URL)
   return (
     <>
       <div>
-        <Head />
+        <LoginForm />
       </div>
     </>
   );

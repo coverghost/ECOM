@@ -1,0 +1,36 @@
+/* Add a black background color to the top navigation */
+.container {
+    /* background-color: #f39696; */
+    padding: 1px 0;
+    text-align: center;
+    justify-content: center;
+      /* display: flex; */
+	/* align-items: center; */
+    
+  }
+  
+  .menu {
+    list-style: none; /* Remove the bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to align the items horizontally */
+    justify-content: space-between; /* Add some space between the items */
+  }
+  
+  .menu li {
+    margin: 0 10px; /* Add some margin between the items */
+  }
+  
+  .menu li a {
+    display: block; /* Make the <a> tag a block element */
+    padding: 10px; /* Add some padding to the <a> tag */
+    text-decoration: none; /* Remove the underline */
+    color: #333; /* Change the color of the text */
+  }
+  .menu li a:hover {
+    display: block; /* Make the <a> tag a block element */
+    /* font-size: 20px; */
+    padding: 10px; /* Add some padding to the <a> tag */
+    text-decoration: none; /* Remove the underline */
+    color: #ff0000; /* Change the color of the text */
+  }

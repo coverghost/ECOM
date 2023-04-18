@@ -1,0 +1,65 @@
+/* for screens up to 768px wide */
+/* body{
+    overflow: hidden;
+} */
+@media (max-width: 768px) {
+    .car_app_img_container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .car_app_img {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      /* border: 2px solid black; */
+    }
+    
+    .info_hero {
+      flex: 1;
+      height: 630px;
+      margin-left: 100px;
+      margin-right: 200px;
+      width: auto;
+      border-radius: 10px; /* Add rounded corners to the card */
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+    }
+  }
+  
+  /* for screens wider than 768px */
+  @media (min-width: 769px) {
+    .car_app_img_container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .car_app_img {
+      flex: 1;
+      width: auto;
+      height: 630px;
+      margin-right: 200px;
+      margin-left: 150px;
+      /* border: 2px solid black; */
+    }
+    
+    .info_hero {
+      flex: 1;
+      height: 630px;
+      margin-left: 100px;
+      margin-right: 200px;
+      width: auto;
+      border-radius: 10px; /* Add rounded corners to the card */
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+    }
+  }
+  

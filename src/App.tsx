@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import BASE_URL from './api/endurls';
 import LoginForm from './components/home';
+import Head from './components/header';
 
 function App() {
   const [message, setMessage] = useState("");
@@ -16,7 +17,7 @@ function App() {
   return (
     <>
       <div>
-        <LoginForm />
+      <Head />
       </div>
     </>
   );
